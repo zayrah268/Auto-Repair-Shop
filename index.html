@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Auto Repair Shop in Bellevue, WA | Trusted Automotive Care for Reliable Performance</title>
+  <meta name="description" content="A professional auto repair shop provides reliable diagnostics, repairs, and preventive maintenance to keep vehicles safe, efficient, and road-ready." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Auto Repair Shop | Trusted Automotive Care for Reliable Performance" />
+  <meta property="og:description" content="Expert auto repair shop services: diagnostics, repairs, maintenance, and long-term vehicle care." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root{
+      /* Local services palette: trustworthy navy + energetic orange */
+      --bg:#07111f;
+      --panel:rgba(255,255,255,.06);
+      --panel2:rgba(255,255,255,.08);
+      --border:rgba(255,255,255,.12);
+
+      --text:rgba(255,255,255,.92);
+      --muted:rgba(255,255,255,.70);
+
+      --brand:#f97316;   /* orange */
+      --brand2:#22c55e;  /* green */
+      --brand3:#38bdf8;  /* light blue */
+
+      --radius:18px;
+      --shadow:0 18px 55px rgba(0,0,0,.45);
+      --maxw:1120px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      line-height:1.75;
+      background:
+        radial-gradient(1100px 760px at 18% 10%, rgba(249,115,22,.22), transparent 55%),
+        radial-gradient(900px 640px at 85% 24%, rgba(56,189,248,.16), transparent 55%),
+        radial-gradient(900px 700px at 50% 95%, rgba(34,197,94,.12), transparent 55%),
+        var(--bg);
+    }
+
+    .container{
+      max-width:var(--maxw);
+      margin:0 auto;
+      padding:22px 16px 80px;
+    }
+
+    /* Sticky local header */
+    header{
+      position:sticky;
+      top:12px;
+      z-index:50;
+      backdrop-filter: blur(10px);
+    }
+    .topbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      padding:12px 14px;
+      border:1px solid var(--border);
+      border-radius:999px;
+      background:linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.04));
+      box-shadow:0 10px 30px rgba(0,0,0,.25);
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      min-width:240px;
+    }
+    .logo{
+      width:34px;height:34px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.14);
+      background:linear-gradient(135deg, rgba(249,115,22,.95), rgba(56,189,248,.9));
+      box-shadow:0 18px 40px rgba(249,115,22,.20);
+    }
+    .brand strong{
+      font-size:14px;
+      letter-spacing:.2px;
+      white-space:nowrap;
+    }
+    .meta{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+      align-items:center;
+    }
+    .pill{
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.04);
+      color:var(--muted);
+      font-size:13px;
+      user-select:none;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      white-space:nowrap;
+    }
+    .dot{
+      width:7px;height:7px;
+      border-radius:999px;
+      background:var(--brand2);
+      box-shadow:0 0 0 4px rgba(34,197,94,.16);
+    }
+
+    /* Hero */
+    .hero{
+      margin-top:18px;
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      background:linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.03));
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+    .hero-inner{
+      padding:28px 20px;
+      position:relative;
+    }
+    .hero-inner:before{
+      content:"";
+      position:absolute;
+      inset:-2px;
+      background:
+        radial-gradient(650px 260px at 12% 14%, rgba(249,115,22,.22), transparent 70%),
+        radial-gradient(650px 260px at 88% 0%, rgba(56,189,248,.16), transparent 70%);
+      pointer-events:none;
+      opacity:.95;
+    }
+    .hero-grid{
+      position:relative;
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:16px;
+      align-items:start;
+    }
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background:rgba(0,0,0,.18);
+      color:rgba(255,255,255,.78);
+      font-size:13px;
+      width:fit-content;
+    }
+    h1{
+      margin:12px 0 10px;
+      font-size:clamp(26px,3.4vw,44px);
+      line-height:1.12;
+      letter-spacing:-.6px;
+    }
+    .subtitle{
+      margin:0;
+      color:var(--muted);
+      max-width:76ch;
+    }
+
+    /* CTA card */
+    .cta{
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:16px;
+      background:rgba(0,0,0,.18);
+    }
+    .cta h3{
+      margin:0 0 6px;
+      font-size:15px;
+      letter-spacing:.2px;
+    }
+    .cta p{
+      margin:0 0 12px;
+      color:var(--muted);
+      font-size:14px;
+    }
+    .cta-row{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+    .stat{
+      border:1px solid var(--border);
+      border-radius:14px;
+      background:rgba(255,255,255,.04);
+      padding:10px 12px;
+      flex:1 1 160px;
+    }
+    .stat strong{display:block;font-size:13px}
+    .stat span{color:var(--muted);font-size:13px}
+
+    /* Content */
+    .content{
+      margin-top:16px;
+      display:grid;
+      grid-template-columns:1fr;
+      gap:14px;
+    }
+    .card{
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      box-shadow:0 10px 30px rgba(0,0,0,.22);
+      overflow:hidden;
+    }
+    .card-inner{padding:20px 20px 10px;}
+    h2{
+      margin:0 0 10px;
+      font-size:22px;
+      letter-spacing:-.2px;
+    }
+    p{margin:0 0 14px;color:rgba(255,255,255,.86)}
+
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+    .mini{
+      border:1px solid var(--border);
+      border-radius:16px;
+      background:rgba(255,255,255,.03);
+      padding:14px;
+    }
+    .mini strong{display:block;margin-bottom:6px}
+    .mini span{color:var(--muted);font-size:13px}
+
+    .divider{
+      height:1px;
+      background:linear-gradient(90deg, transparent, rgba(255,255,255,.14), transparent);
+      margin:10px 0 6px;
+    }
+
+    /* Links styling (EXACTLY 2 links) */
+    a.link{
+      color:rgba(255,255,255,.96);
+      font-weight:900;
+      text-decoration:underline;
+      text-decoration-thickness:2px;
+      text-underline-offset:4px;
+      background:linear-gradient(90deg, rgba(249,115,22,.25), rgba(56,189,248,.18));
+      padding:0 6px;
+      border-radius:8px;
+      border:1px solid rgba(255,255,255,.10);
+      display:inline-block;
+      transition:transform .12s ease, filter .12s ease;
+    }
+    a.link:hover{transform:translateY(-1px);filter:brightness(1.03)}
+    a.link:focus{outline:none;box-shadow:0 0 0 4px rgba(249,115,22,.22)}
+
+    footer{
+      margin-top:16px;
+      text-align:center;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    @media (max-width: 900px){
+      .hero-grid{grid-template-columns:1fr}
+      .grid2{grid-template-columns:1fr}
+      .brand{min-width:unset}
+      .meta{justify-content:flex-start}
+    }
+  </style>
+
+  <!-- Optional Schema: edit placeholders if you want -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"LocalBusiness",
+        "name":"Bellevue Auto Repair",
+        "url":"https://www.bellevueautorepair.com/",
+        "areaServed":["Bellevue, WA","Redmond, WA","Kirkland, WA"],
+        "telephone":"+1-000-000-0000",
+        "address":{
+          "@type":"PostalAddress",
+          "streetAddress":"123 Main St",
+          "addressLocality":"Bellevue",
+          "addressRegion":"WA",
+          "postalCode":"98004",
+          "addressCountry":"US"
+        }
+      },
+      {
+        "@type":"Article",
+        "headline":"Auto Repair Shop: Trusted Automotive Care for Reliable Performance",
+        "description":"A professional auto repair shop maintains, diagnoses, and repairs vehicles to ensure safety and dependable performance."
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+
+    <header aria-label="Local header">
+      <div class="topbar">
+        <div class="brand">
+          <div class="logo" aria-hidden="true"></div>
+          <strong>Auto Repair Shop • Bellevue, WA</strong>
+        </div>
+
+        <div class="meta" aria-label="Quick info">
+          <span class="pill"><span class="dot" aria-hidden="true"></span> Trusted Local Service</span>
+          <span class="pill">Service Areas: Bellevue • Redmond • Kirkland</span>
+          <span class="pill">Hours: Mon–Sat</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero" aria-label="Hero">
+      <div class="hero-inner">
+        <div class="hero-grid">
+          <div>
+            <div class="badge"><span class="dot" aria-hidden="true"></span> Reliable • Professional • Efficient</div>
+            <h1>Auto Repair Shop Trusted Automotive Care for Reliable Performance</h1>
+
+            <!-- Intro with BOTH links placed naturally -->
+            <p class="subtitle">
+              An auto repair shop is a vital service center dedicated to maintaining, diagnosing, and repairing vehicles to ensure safety and dependable performance. In today’s world, vehicles are an essential part of daily life, and their reliability directly affects productivity and peace of mind. A professional
+              <a class="link" href="https://www.bellevueautorepair.com/" target="_blank" rel="noopener noreferrer">Auto Repair Shop</a>
+              provides expert care for cars, trucks, and other vehicles by addressing mechanical, electrical, and performance-related issues with precision and efficiency.
+            </p>
+            <p class="subtitle" style="margin-top:10px;">
+              Unlike general maintenance providers, a specialized auto repair shop focuses on long-term vehicle health. Through skilled workmanship and advanced tools, it helps prevent unexpected breakdowns and costly repairs while keeping vehicles operating at peak condition. Learn more here:
+              <a class="link" href="http://repair-auto.s3-website.eu-central-1.amazonaws.com" target="_blank" rel="noopener noreferrer">Repair Auto Service</a>.
+            </p>
+          </div>
+
+          <aside class="cta" aria-label="Local CTA">
+            <h3>What you get from a trusted shop</h3>
+            <p>Transparent recommendations, accurate diagnostics, and repairs that support long-term vehicle reliability.</p>
+
+            <div class="cta-row">
+              <div class="stat">
+                <strong>Popular Services</strong>
+                <span>Diagnostics • Brakes • Engine • Suspension</span>
+              </div>
+              <div class="stat">
+                <strong>Why It Matters</strong>
+                <span>Safety • Efficiency • Longevity</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <main class="content" aria-label="Article">
+
+      <section class="card">
+        <div class="card-inner">
+          <h2>The Role of a Professional Auto Repair Shop</h2>
+          <p>
+            A professional auto repair shop serves as a complete solution for vehicle care. It combines technical expertise with customer-focused service to deliver accurate diagnostics and effective repairs. Modern vehicles are built with complex systems that require trained professionals who understand both mechanical components and computerized technologies.
+          </p>
+          <p>
+            An experienced auto repair shop ensures that every repair meets industry standards and manufacturer guidelines. This level of professionalism not only improves vehicle performance but also enhances safety on the road. From minor adjustments to major repairs, the role of an auto repair shop is essential in keeping vehicles dependable.
+          </p>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card-inner">
+          <h2>Services Offered by an Auto Repair Shop</h2>
+          <p>
+            Auto repair shops provide a wide range of services designed to meet diverse automotive needs. These services typically include engine repair, brake system servicing, transmission work, suspension repair, electrical diagnostics, and routine maintenance. A well-equipped auto repair shop can identify hidden issues early, preventing them from turning into serious problems.
+          </p>
+          <p>
+            Routine maintenance services such as oil changes, tire inspections, and fluid replacements are equally important. By offering comprehensive care, an auto repair shop helps maintain vehicle efficiency, fuel economy, and overall driving comfort.
+          </p>
+
+          <div class="divider" role="separator" aria-hidden="true"></div>
+
+          <div class="grid2" aria-label="Service highlights">
+            <div class="mini">
+              <strong>Diagnostics & Electrical</strong>
+              <span>Computer scans and expert troubleshooting for fast accuracy.</span>
+            </div>
+            <div class="mini">
+              <strong>Brakes & Safety Systems</strong>
+              <span>Restore stopping power and ensure safe road handling.</span>
+            </div>
+            <div class="mini">
+              <strong>Engine & Transmission</strong>
+              <span>Performance-focused repairs to protect longevity.</span>
+            </div>
+            <div class="mini">
+              <strong>Maintenance & Fluids</strong>
+              <span>Oil, filters, tires, and inspections to prevent issues early.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card-inner">
+          <h2>Importance of Skilled Technicians</h2>
+          <p>
+            The success of an auto repair shop depends heavily on the expertise of its technicians. Skilled mechanics undergo extensive training to stay updated with evolving automotive technology. Their ability to accurately diagnose issues and apply effective solutions ensures quality repairs and customer satisfaction.
+          </p>
+          <p>
+            Professional technicians understand the importance of attention to detail. Every repair, no matter how small, is performed with precision to avoid future complications. This expertise builds trust and establishes the auto repair shop as a reliable partner for vehicle owners.
+          </p>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card-inner">
+          <h2>Advanced Technology in Modern Auto Repair Shops</h2>
+          <p>
+            Modern auto repair shops rely on advanced diagnostic equipment to provide accurate and efficient services. Computerized systems help technicians analyze vehicle data and identify problems quickly. This technology reduces guesswork and allows for precise repairs that save time and cost.
+          </p>
+          <p>
+            With the increasing use of electronics in vehicles, an auto repair shop must be equipped to handle sensors, control modules, and safety systems. Advanced tools ensure that even the most complex repairs are completed correctly, maintaining the integrity of the vehicle.
+          </p>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card-inner">
+          <h2>Customer Experience at an Auto Repair Shop</h2>
+          <p>
+            A high-quality auto repair shop prioritizes customer experience as much as technical excellence. Clear communication, honest recommendations, and transparent pricing are essential elements of professional service. Customers value repair shops that explain issues in simple terms and provide solutions that fit their needs.
+          </p>
+          <p>
+            A welcoming environment and reliable service create long-term relationships with customers. When vehicle owners feel confident in the care their vehicles receive, they are more likely to return for future services and recommend the auto repair shop to others.
+          </p>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card-inner">
+          <h2>Preventive Maintenance and Long-Term Value</h2>
+          <p>
+            Preventive maintenance is a core focus of every reputable auto repair shop. Regular inspections and timely servicing help identify potential issues before they cause major damage. This proactive approach extends the lifespan of vehicles and reduces overall repair costs.
+          </p>
+          <p>
+            An auto repair shop that emphasizes preventive care adds long-term value for customers. Well-maintained vehicles offer better performance, improved fuel efficiency, and enhanced resale value. This makes regular visits to an auto repair shop a smart and cost-effective decision.
+          </p>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card-inner">
+          <h2>Auto Repair Shop as a Long-Term Partner</h2>
+          <p>
+            An auto repair shop is more than a place for repairs; it is a long-term partner in vehicle ownership. By providing consistent and reliable service, it supports vehicle owners through every stage of their vehicle’s life. Whether handling routine maintenance or unexpected repairs, a trusted auto repair shop ensures peace of mind.
+          </p>
+          <p>
+            Building a relationship with a dependable repair shop allows vehicle owners to make informed decisions and maintain confidence in their transportation. This partnership is essential for safety, convenience, and long-term vehicle performance.
+          </p>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card-inner">
+          <h2>Conclusion</h2>
+          <p>
+            An auto repair shop plays a crucial role in keeping vehicles safe, efficient, and reliable. Through skilled technicians, advanced technology, and customer-focused service, it delivers comprehensive automotive care. From routine maintenance to complex repairs, a professional auto repair shop ensures that vehicles perform at their best.
+          </p>
+          <p>
+            Choosing the right auto repair shop is an investment in vehicle longevity and personal safety. With consistent care and expert service, an auto repair shop becomes an essential part of responsible vehicle ownership.
+          </p>
+        </div>
+      </section>
+
+      <footer>
+        © <span id="y"></span> • Local SEO Optimized Auto Repair Shop Page
+      </footer>
+
+    </main>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
